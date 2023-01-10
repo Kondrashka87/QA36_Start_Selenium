@@ -50,6 +50,7 @@ public class Index
         item1.click();
         WebElement alert = wd.findElement(By.cssSelector("#alert"));
         String str = alert.getText();
+        System.out.println("Text of alert is --->" + alert);
         Assert.assertTrue(str.contains("Clicked by Item 1"));
 
         // find Item3 & click() ===> assert that "div-alert" contains message  "Clicked by Item 3"
